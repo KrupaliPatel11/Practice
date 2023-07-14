@@ -1,0 +1,30 @@
+<!-- Write a program to find the factorial of a number using a recursive function. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Of Number</title>
+    <script>
+        function fact(num) {
+            if (num == 0) {
+                return 1;
+            } else {
+                return num * fact(num - 1);
+            }
+        }
+        function fact1() {
+            var num = document.getElementById('num').value;
+            var f = fact(num);
+            document.getElementById('msg').innerHTML = "The Factorial Of Number    " + num + ":" + "</br>" + f;
+        }
+    </script>
+</head>
+<body>
+    <h3>Factorial Of Number</h3>
+    <input type="number" id="num" class="num" value="" placeholder="Enter Number">
+    <button type="submit" onclick="fact1()"> Submit</button>
+    <p id="msg"></p>
+</body>
+</html>

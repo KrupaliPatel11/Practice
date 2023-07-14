@@ -1,0 +1,2 @@
+# To run backend: npm run develop
+# to run frontend : yarn dev
